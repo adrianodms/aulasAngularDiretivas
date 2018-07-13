@@ -1,0 +1,12 @@
+<h1>
+  <i class="material-icons" [class.favorite]="meuFavorito" [class.not-favorite]="!meuFavorito" (click)="favoritar()">star</i>
+</h1>
+
+<h1>
+  <i class="material-icons" [ngClass]="{
+     favorite : meuFavorito,
+     'not-favorite': !meuFavorito
+    }" (click)="favoritar()">
+    star
+  </i>
+</h1>
